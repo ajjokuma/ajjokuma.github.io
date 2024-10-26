@@ -85,12 +85,12 @@
         .about-section {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
             padding: 40px;
+            align-items: flex-end;
         }
 
         .about-section img {
-            max-width: 100%;
+            max-width: 20%;
             height: auto;
             border-radius: 10px;
             margin-right: 20px;
@@ -99,7 +99,86 @@
         .about-text {
             flex: 1;
             min-width: 300px;
+            font-size: 1.5em;
         }
+        .highlight1 {
+            font-weight: bold;
+            color:darkblue
+        }
+        .highlight2 {
+            font-weight: bold;
+            color: darkmagenta
+        }
+        .highlight3 {
+            font-weight: bold;
+            color: #e6450b
+        }
+        .contact-info {
+            background: #f8f8f8;
+            color: #333; /* Dark gray text for readability but not too bold */
+            padding: 20px;
+            border-radius: 5px; /* Slight rounding of corners */
+            border: 1px solid #ccc; /* Thin border */
+            min-width: 300px;
+            text-align: left; /* Align text to the left */
+            
+            flex: 0.2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            
+        }
+
+        .contact-info h3 {
+            margin-bottom: 10px;
+            font-weight: normal; /* Normal weight to make it less bold */
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            line-height: 1.5; /* Increased line spacing for better readability */
+        }
+        .styled-link {
+            color: #1e90ff; /* Link color */
+            text-decoration: none; /* Removes underline */
+            font-weight: bold; /* Makes the text bold */
+        }
+
+        /* Hover state (when the user hovers over the link) */
+        .styled-link:hover {
+            color: green; /* Changes color when hovered */
+            text-decoration: underline; /* Adds underline on hover */
+            cursor: pointer; /* Shows pointer cursor */
+        }
+
+        /* Active state (when the link is clicked) */
+        .styled-link:active {
+            color: green; /* Changes color when clicked */
+        }
+
+        /* Visited state (after the link is clicked and visited) */
+        .styled-link:visited {
+            color: #6a5acd; /* Changes color if the link has been visited */
+        }
+
+        .button-container {
+            text-align: left; 
+        }
+        .my-button {
+            display: inline-block; /* Ensures buttons are treated as inline elements */
+            margin: 5px; /* Adds space between the buttons */
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .my-button:hover {
+            background-color: darkmagenta; /* Optional: Change color on hover */
+        }
+
     </style>
 </head>
 <body>
@@ -112,8 +191,8 @@
         </div>
         <div class="nav-links" id="navLinks">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
+            <a href="#">Work</a>
+            <a href="#">About Me</a>
             <a href="#">Contact</a>
         </div>
     </nav>
@@ -121,8 +200,24 @@
     <section class="about-section">
         <img src="Ajwa-picture.jpeg" alt="My Picture">
         <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hello! I'm Ajwa Shahid, an HCI student researcher who has promised to design dependable and enjoyable digital solutions.</p>
+            <h3>Hi! I'm Ajwa,</h3>
+            <p>a <span class="highlight1">student researcher</span> who has promised to<br> 
+                <span class="highlight2">design dependable</span> and <span class="highlight2">enjoyable</span> digital solutions.
+            </p><br>
+            <p>🎓</span> MS CS with <span class="highlight2">Thesis in HCI</span> at the <span class="highlight3">University of Virginia</p><br>
+            
+            <div class="button-container">
+                <button class="my-button">Research</button>
+                <button class="my-button">Projects</button>
+                <button class="my-button">Teaching</button>
+            </div>
+        </div>
+        <div class="contact-info">
+            <a href="https://drive.google.com/file/d/1AwJJNn3uEcL1fq1FWYsd7IqC96MkHsOD/view?usp=sharing" class="styled-link">CV</a>
+            <a href="https://www.linkedin.com/in/ajjo/" class="styled-link">Linkedin</a>
+            <a href="https://ultimateinterface.com/" class="styled-link">Ultimate User Interface Lab</a>
+            <p>ckf2dq@virginia.edu <br>
+            Charlottesville, VA, USA</p>
         </div>
     </section>
 
