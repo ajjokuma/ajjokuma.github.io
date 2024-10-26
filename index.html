@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajwa</title>
@@ -13,7 +14,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         .navbar {
@@ -87,6 +88,7 @@
             flex-wrap: wrap;
             padding: 40px;
             align-items: flex-end;
+            justify-content: space-between;
         }
 
         .about-section img {
@@ -98,8 +100,13 @@
 
         .about-text {
             flex: 1;
-            min-width: 300px;
+            max-width: 700px;
             font-size: 1.5em;
+        }
+        .about1 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
         }
         .highlight1 {
             font-weight: bold;
@@ -122,12 +129,12 @@
             min-width: 300px;
             text-align: left; /* Align text to the left */
             
-            flex: 0.2;
+            flex: 1;
+            max-width: 20%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-self: flex-start;
-            
         }
 
         .contact-info h3 {
@@ -178,6 +185,9 @@
         .my-button:hover {
             background-color: darkmagenta; /* Optional: Change color on hover */
         }
+        .container-bw-about {
+            justify-content: space-between;
+        }
 
     </style>
 </head>
@@ -190,26 +200,25 @@
             <div></div>
         </div>
         <div class="nav-links" id="navLinks">
-            <a href="#">Home</a>
             <a href="#">Work</a>
             <a href="#">About Me</a>
-            <a href="#">Contact</a>
         </div>
     </nav>
 
     <section class="about-section">
-        <img src="Ajwa-picture.jpeg" alt="My Picture">
-        <div class="about-text">
-            <h3>Hi! I'm Ajwa,</h3>
-            <p>a <span class="highlight1">student researcher</span> who has promised to<br> 
-                <span class="highlight2">design dependable</span> and <span class="highlight2">enjoyable</span> digital solutions.
-            </p><br>
-            <p>🎓</span> MS CS with <span class="highlight2">Thesis in HCI</span> at the <span class="highlight3">University of Virginia</p><br>
-            
-            <div class="button-container">
-                <button class="my-button">Research</button>
-                <button class="my-button">Projects</button>
-                <button class="my-button">Teaching</button>
+        <div class="about1">
+            <img src="Ajwa-picture.jpeg" alt="My Picture">
+            <div class="about-text">
+                <h3>Hi! I'm Ajwa,</h3>
+                <p>a <span class="highlight1">student researcher</span> who has promised to <span class="highlight2">design dependable</span> and <span class="highlight2">enjoyable</span> digital solutions.
+                </p><br>
+                <p>🎓</span> MS CS with <span class="highlight2">Thesis in HCI</span> at the <span class="highlight3">University of Virginia</p><br>
+                
+                <div class="button-container">
+                    <button class="my-button">Research</button>
+                    <button class="my-button">Projects</button>
+                    <button class="my-button">Teaching</button>
+                </div>
             </div>
         </div>
         <div class="contact-info">
