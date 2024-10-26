@@ -81,11 +81,30 @@
                 display: flex;
             }
         }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="brand-title"><a href="#">My Website</a></div>
+        <div class="brand-title"><a href="#">Ajwa Shahid</a></div>
         <div class="hamburger" onclick="toggleNav()">
             <div></div>
             <div></div>
@@ -98,6 +117,14 @@
             <a href="#">Contact</a>
         </div>
     </nav>
+
+    <section class="about-section">
+        <img src="Ajwa-picture.jpeg" alt="My Picture">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ajwa Shahid, an HCI student researcher who has promised to design dependable and enjoyable digital solutions.</p>
+        </div>
+    </section>
 
     <script>
         function toggleNav() {
