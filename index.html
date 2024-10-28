@@ -299,10 +299,28 @@
         .not-bold{
             font-weight: lighter;
         }
+        .scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Hidden by default */
+            background-color: #759cc5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .scrollTopBtn:hover {
+            background-color: #0056b3;
+        }
 
     </style>
 </head>
 <body>
+    <button class="scrollTopBtn" onclick="scrollToTop()" id="scrollTopBtn">&#9650;</button>
     <nav class="navbar">
         <div class="brand-title"><a href="#">Ajwa Shahid</a></div>
         <div class="hamburger" onclick="toggleNav()">
@@ -326,9 +344,9 @@
                 <p>🎓</span> MS CS with <span class="highlight2">Thesis in HCI</span> at the <span class="highlight3">University of Virginia</p><br>
                 
                 <div class="button-container">
-                    <button class="my-button">Research</button>
-                    <button class="my-button">Projects</button>
-                    <button class="my-button">Teaching</button>
+                    <button class="my-button" onclick="document.getElementById('research-section').scrollIntoView({behavior: 'smooth'});">Research</button>
+                    <button class="my-button" onclick="document.getElementById('project-section').scrollIntoView({behavior: 'smooth'});">Projects</button>
+                    <button class="my-button" onclick="document.getElementById('teach-section').scrollIntoView({behavior: 'smooth'});">Teaching</button>
                 </div>
             </div>
         </div>
@@ -340,7 +358,7 @@
             Charlottesville, VA, USA</p>
         </div>
     </section>
-    <section>
+    <section id="research-section">
         <h2 class="highlight-research">Research</h2>
         <div class="research-display">
             <div class="card">
@@ -350,7 +368,7 @@
 
         </div>
     </section>
-    <section>
+    <section id="project-section">
         <h2 class="highlight-project">Projects</h2>
         <div class="research-display">
             <div class="card">
@@ -374,7 +392,7 @@
 
         </div>
     </section>
-    <section>
+    <section id="teach-section">
         <h2 class="highlight-teach">Teaching</h2>
         <div class="container">
             <h3 class="not-bold">I have been a teaching assistant at the <span class="university">University of Virginia</span> for the following courses:</h3>
@@ -423,6 +441,19 @@
         function toggleNav() {
             const navLinks = document.getElementById('navLinks');
             navLinks.classList.toggle('active');
+        }
+        window.onscroll = function() {
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to the top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
