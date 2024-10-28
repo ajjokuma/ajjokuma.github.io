@@ -189,8 +189,19 @@
             font-weight: bold;
             color:darkblue;
             text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .highlight-teach {
+            font-weight: bold;
+            color:rgb(100, 0, 17);
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
         }
         .highlight-project{
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-weight: bold;
             color: darkmagenta;
             text-align: center;
@@ -198,7 +209,7 @@
         /* cards */
         .card {
             width: 55%;
-            padding: 20px;
+            padding: 10px;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -240,12 +251,52 @@
             cursor: pointer;
         }
         .research-display {
-            padding: 40px;
+            padding: 20px;
             display: flex;
             justify-content: center;
         }
         .image-thesis {
             width: 100%;
+        }
+        .card-heading{
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .university {
+            color: #d0541f;
+            font-weight: bold;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .course {
+            width: 30%;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .course-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .course-instructor {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .course-description {
+            font-size: 14px;
+            text-align: justify;
+        }
+        .not-bold{
+            font-weight: lighter;
         }
 
     </style>
@@ -292,7 +343,7 @@
         <h2 class="highlight-research">Research</h2>
         <div class="research-display">
             <div class="card">
-                <h2>Enhancing Voice Interaction for Older Adults by Harnessing LLMs</h2>
+                <h2 class="card-heading">Enhancing Voice Interaction for Older Adults by Harnessing LLMs</h2>
                 <img class="image-thesis" src="Research-thesis.jpg" alt="Enhancing Voice Interaction for Older Adults by Harnessing LLMs">
             </div>
 
@@ -302,11 +353,69 @@
         <h2 class="highlight-project">Projects</h2>
         <div class="research-display">
             <div class="card">
-                <h2>Caraamad</h2>
+                <h2 class="card-heading">Caraamad</h2>
                 <img class="image-thesis" src="caraamad-card.jpg" alt="Caraamad">
             </div>
 
         </div>
+        <div class="research-display">
+            <div class="card">
+                <h2 class="card-heading">Super Abbu</h2>
+                <img class="image-thesis" src="superabbu.jpg" alt="Super Abbu">
+            </div>
+
+        </div>
+        <div class="research-display">
+            <div class="card">
+                <h2 class="card-heading">Hamari Nur</h2>
+                <img class="image-thesis" src="hamarinur.jpg" alt="Hamari Nur">
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2 class="highlight-teach">Teaching</h2>
+        <div class="container">
+            <h3 class="not-bold">I have been a teaching assistant at the <span class="university">University of Virginia</span> for the following courses:</h3>
+            <h3 class="not-bold">(Aug 2023 - Present)</h3>
+            <div class="courses">
+                <div class="course blue">
+                    <div class="course-title">Human-Computer Interaction (CS 6501)</div>
+                    <div class="course-instructor">Instructor: Dr. Seongkook Heo</div>
+                    <div class="course-description">Grading weekly paper responses from students, providing support throughout the mini HCI research project cycle to student groups.</div>
+                </div>
+                <div class="course purple">
+                    <div class="course-title">Advanced Software Development Techniques (CS 3240)</div>
+                    <div class="course-instructor">Instructors: Dr. Mark Sherriff and Dr. Tom Horton</div>
+                    <div class="course-description">Managing 3 teams of student project groups, grading homework assignments, and conducting office hours for additional support on Django, Heroku, Amazon S3 Storage, Google Login API.</div>
+                </div>
+                <div class="course green">
+                    <div class="course-title">Usability Engineering (CS 4501)</div>
+                    <div class="course-instructor">Instructor: Dr. Panagiotis Apostolellis</div>
+                    <div class="course-description">Evaluation of usability guidelines, assessment of design rationale, user testing techniques, communication and teamwork, and project evaluation.</div>
+                </div>
+            </div>
+
+            <h3 class="not-bold">I have also been a teaching assistant at the <span class="university">Lahore University of Management Sciences</span> for the following courses:</h3>
+            <div class="courses">
+                <div class="course red">
+                    <div class="course-title">Fundamentals of Computer Systems (CS 225)</div>
+                    <div class="course-instructor">Instructor: Dr. Basit Shafiq</div>
+                    <div class="course-description">Grading assignments, orchestrating quizzes, conducting office hours for student assistance, and supervising all graded evaluations.</div>
+                </div>
+                <div class="course purple">
+                    <div class="course-title">Discrete Mathematics (CS 210)</div>
+                    <div class="course-instructor">Instructors: Dr. Basit Shafiq and Dr. Imdad Ullah Khan</div>
+                    <div class="course-description">Providing tutorials on LaTeX usage, guiding students through each homework assignment, and conducting office hours for additional support on course material.</div>
+                </div>
+                <div class="course orange">
+                    <div class="course-title">Computational Problem Solving (CS 100)</div>
+                    <div class="course-instructor">Instructor: Dr. Maryam Mustafa</div>
+                    <div class="course-description">Leading weekly lab sessions with detailed walkthroughs of assignments, conducting office hours for additional student support, and assisting in the development and updating of course materials, including programming exercises and lab-work questions.</div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <script>
