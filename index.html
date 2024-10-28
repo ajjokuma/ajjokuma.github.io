@@ -152,19 +152,15 @@
             font-weight: bold; /* Makes the text bold */
         }
 
-        /* Hover state (when the user hovers over the link) */
         .styled-link:hover {
             color: green; /* Changes color when hovered */
             text-decoration: underline; /* Adds underline on hover */
             cursor: pointer; /* Shows pointer cursor */
         }
 
-        /* Active state (when the link is clicked) */
         .styled-link:active {
             color: green; /* Changes color when clicked */
         }
-
-        /* Visited state (after the link is clicked and visited) */
         .styled-link:visited {
             color: #6a5acd; /* Changes color if the link has been visited */
         }
@@ -187,6 +183,69 @@
         }
         .container-bw-about {
             justify-content: space-between;
+        }
+        
+        .highlight-research {
+            font-weight: bold;
+            color:darkblue;
+            text-align: center;
+        }
+        .highlight-project{
+            font-weight: bold;
+            color: darkmagenta;
+            text-align: center;
+        }
+        /* cards */
+        .card {
+            width: 55%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Hover effect */
+        .card::after {
+            content: "Learn More";
+            position: center;
+            color: white;
+            font-size: small;
+            background-color: rgba(0, 0, 139, 0.562);
+            padding: 5px;
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .card:hover::after {
+            opacity: 1;
+            cursor: pointer;
+        }
+        .research-display {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .image-thesis {
+            width: 100%;
         }
 
     </style>
@@ -227,6 +286,26 @@
             <a href="https://ultimateinterface.com/" class="styled-link">Ultimate User Interface Lab</a>
             <p>ckf2dq@virginia.edu <br>
             Charlottesville, VA, USA</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="highlight-research">Research</h2>
+        <div class="research-display">
+            <div class="card">
+                <h2>Enhancing Voice Interaction for Older Adults by Harnessing LLMs</h2>
+                <img class="image-thesis" src="Research-thesis.jpg" alt="Enhancing Voice Interaction for Older Adults by Harnessing LLMs">
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2 class="highlight-project">Projects</h2>
+        <div class="research-display">
+            <div class="card">
+                <h2>Caraamad</h2>
+                <img class="image-thesis" src="caraamad-card.jpg" alt="Caraamad">
+            </div>
+
         </div>
     </section>
 
