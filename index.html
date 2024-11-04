@@ -153,16 +153,16 @@
         }
 
         .styled-link:hover {
-            color: green; /* Changes color when hovered */
-            text-decoration: underline; /* Adds underline on hover */
-            cursor: pointer; /* Shows pointer cursor */
+            color: green; 
+            text-decoration: underline; 
+            cursor: pointer; 
         }
 
         .styled-link:active {
-            color: green; /* Changes color when clicked */
+            color: green; 
         }
         .styled-link:visited {
-            color: #6a5acd; /* Changes color if the link has been visited */
+            color: #6a5acd; 
         }
 
         .button-container {
@@ -179,7 +179,7 @@
             cursor: pointer;
         }
         .my-button:hover {
-            background-color: darkmagenta; /* Optional: Change color on hover */
+            background-color: darkmagenta; 
         }
         .container-bw-about {
             justify-content: space-between;
@@ -316,6 +316,15 @@
         .scrollTopBtn:hover {
             background-color: #0056b3;
         }
+        .card-link {
+            text-decoration: none;
+            color: inherit; /* Optional: Keeps the original text color in the card */
+            align-items: inherit;
+            align-self: inherit;
+            flex-direction: inherit;
+            display: inherit;
+            justify-content: inherit;
+        }
 
     </style>
 </head>
@@ -361,34 +370,39 @@
     <section id="research-section">
         <h2 class="highlight-research">Research</h2>
         <div class="research-display">
-            <div class="card">
-                <h2 class="card-heading">Enhancing Voice Interaction for Older Adults by Harnessing LLMs</h2>
-                <img class="image-thesis" src="Research-thesis.jpg" alt="Enhancing Voice Interaction for Older Adults by Harnessing LLMs">
-            </div>
-
+            <a class="card-link" href="projects/thesis.html">
+                <div class="card">
+                    <h2 class="card-heading">Enhancing Voice Interaction for Older Adults by Harnessing LLMs</h2>
+                    <img class="image-thesis" src="Research-thesis.jpg" alt="Enhancing Voice Interaction for Older Adults by Harnessing LLMs">
+                </div>    
+            </a>
         </div>
     </section>
     <section id="project-section">
         <h2 class="highlight-project">Projects</h2>
         <div class="research-display">
-            <div class="card">
-                <h2 class="card-heading">Caraamad</h2>
-                <img class="image-thesis" src="caraamad-card.jpg" alt="Caraamad">
-            </div>
-
+            <a class="card-link" href="projects/caraamad.html">
+                <div class="card">
+                    <h2 class="card-heading">Caraamad</h2>
+                    <img class="image-thesis" src="caraamad-card.jpg" alt="Caraamad">
+                </div>
+            </a>
         </div>
         <div class="research-display">
-            <div class="card">
-                <h2 class="card-heading">Super Abbu</h2>
-                <img class="image-thesis" src="superabbu.jpg" alt="Super Abbu">
-            </div>
-
+            <a class="card-link" href="projects/superabbu.html">
+                <div class="card">
+                    <h2 class="card-heading">Super Abbu</h2>
+                    <img class="image-thesis" src="superabbu.jpg" alt="Super Abbu">
+                </div>
+            </a>
         </div>
         <div class="research-display">
-            <div class="card">
-                <h2 class="card-heading">Hamari Nur</h2>
-                <img class="image-thesis" src="hamarinur.jpg" alt="Hamari Nur">
-            </div>
+            <a class="card-link" href="projects/hamarinur.html">
+                <div class="card">
+                    <h2 class="card-heading">Hamari Nur</h2>
+                    <img class="image-thesis" src="hamarinur.jpg" alt="Hamari Nur">
+                </div>
+            </a>
 
         </div>
     </section>
