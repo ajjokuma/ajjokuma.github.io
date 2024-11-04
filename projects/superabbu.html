@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Abbbu</title>
+    <link rel="stylesheet" href="proj-styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="case-study-intro">
+
+        <h1>Super Abbu Doctor's App &#129404</h1>
+
+        <img src="../assets/superabbu_main.png" alt="Super Abbu Doctor's App Banner">
+
+        <section class="project-details">
+            <section class="project-role">
+                <h2>My Role</h2>
+                <p>UX Researcher + Designer + Android Developer</p>
+                <section class="project-team">
+                    <h2>Team</h2>
+                    <p>Ajwa Shahid (Co-researcher) and Professors Mustafa Naseem and Agha Raza (Mentors)</p>
+                </section>
+                <section class="project-translations">
+                    <h2>Translations</h2>
+                    <p>Super Abbu is Urdu for Super Dad</p>
+                </section>
+            </section>
+    
+            <section class="project-process">
+                <section class="project-duration">
+                    <h2>Duration</h2>
+                    <p>January 2023 - May 2023</p>
+                </section>
+                <h2>Process</h2>
+                <ol>
+                    <li>Problem Identification</li>
+                    <li>User Research</li>
+                    <li>Information Synthesis and Ideation</li>
+                    <li>Prototyping</li>
+                    <li>Outcome and Reflections</li>
+                </ol>
+            </section>
+        </section>
+    </div>
+    
+    <article class="case-study">
+        <section class="problem-identification">
+            <h2>Problem Identification</h2>
+            <p>Pakistan’s <b> high infant and maternal mortality rates of 52 per 1,000 live births </b> are exacerbated by limited paternal involvement, particularly in rural areas. 
+                Addressing this is difficult as <b> less than 25% of the population has internet access, and 42% are illiterate. </b> 
+                <br>
+                A free voice-based platform, <a href="https://news.umich.edu/super-abbu-project-improving-maternal-health-by-engaging-fathers/"> Super Abbu</a>, was introduced to enable fathers to ask questions about maternal health (answered by a team of doctors) and engage with other expectant parents. 
+                
+                While the service was a success, the doctors were quickly overwhelmed by the sheer volume of weekly user queries.
+                This led to slower doctor response times, negatively impacting Super Abbu users.
+            </p>
+            <blockquote>
+                <p> &#10067 <b> Problem: How might we assist doctors who aren’t tech-savvy in improving their response times? </b> </p>
+            </blockquote>
+        </section>
+
+        <hr>
+        
+        <section class="user-research">
+            <h2>User Research</h2>
+            <ul>
+                <li><strong>Target Audience:</strong> Medical Doctors (or Residents) based in Pakistan.</li>
+                <li><strong>Study Design:</strong>  One focus group (online on Zoom) of 5 resident doctors and 3 semi-structured interviews with medical doctors (online and in-person).</li>
+            </ul>
+            
+            <h3>Research Questions</h3>
+            <ol>
+                <li>Can you briefly describe your current workflow for handling remote patient queries?</li>
+                <li>What tools or software are you currently using for professional communication with colleagues?</li>
+                <li>Are there any bottlenecks or delays you experience when answering patient queries?</li>
+                <li>What features would you like to see in a collaboration application aimed at medical professionals?</li>
+                
+            </ol>
+        </section>
+
+        <figure>
+            <img src="../assets/superabbu-insights.png" alt="User Research Insights" loading="lazy">
+            <figcaption>Main insights from User Research.</figcaption>
+        </figure>
+       
+        <hr>
+
+        <section class="information-synth-ideation">
+            <h2>Information Synthesis and Ideation</h2>
+            <p>We needed to complete the design and development of an MVP (Minimum Viable Product) as soon as possible to bring the Super Abbu service back online. Thus, we created a persona to stay anchored on the most pertinent user needs.</p>
+            
+            <h3>Persona</h3>
+
+            <div class="grid-container">
+
+                <section class="persona-intro">
+                    <figure>
+                        <img src="../assets/doctor_persona.png" alt="Doctor persona image" class="persona-image" loading="lazy">
+                        <figcaption><a href="https://www.flaticon.com/free-icons/doctor">Attribution</a></figcaption>
+                    </figure>
+            
+
+                    <p><strong>Name: </strong> Dr. Sal</p>
+                    <p><strong>Age: </strong> 48 years</p>
+                    <p><strong>Occupation: </strong>Medical Doctor</p>
+                    <p><strong>Location: </strong>Lahore, Pakistan</p>
+
+                    <h4>Goal:</h4>
+                    <p>To answer patient queries effectively in his free time.</p>
+
+
+                </section>
+
+                <section class="persona-details">
+
+                    <h4>Quote:</h4>
+                    <blockquote>"I try my best to get back to patients as soon as possible. However, some complex questions require me to consult other doctors, but arranging such a consultation causes a delay due to everyone’s busy schedule."</blockquote>
+
+                    <h4>Story: </h4>
+                    <p>Sal is a 48-year-old medical doctor who works at Sal’s Clinic. He is passionate about helping people in his community with his medical expertise. Thus, he joined the Super Abbu team part-time to answer user queries about maternal health through his phone.</p>
+                    
+                    <h4>Frustrations </h4>
+                    <ul>
+                        <li>Not tech-savvy. WhatsApp is the only application he is familiar with and comfortable using.</li>
+                        <li>Incredibly busy work-life. Generally, finds himself answering Super Abbu patient queries at the end of his workday.</li>
+                    </ul>
+
+                    <h4>Need: </h4>
+                <p>A mobile application that allows him to collaborate on and respond to patient queries efficiently.</p>
+
+                </section>
+
+            </div>
+
+            <section class="taskflow">
+
+                <h2>Task Flow for MVP</h2>
+                <ol>
+                    <li>The doctor browses the list of New Questions and selects one.</li>
+                    <li>The doctor uses the provided interface to answer the question.</li>
+                </ol>
+
+                <figure>
+                    <img src="../assets/superabbu_taskflow.png" alt="Task Flow Diagram" loading="lazy">
+                    <figcaption>Main Task Flow</figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <hr>
+
+        <section class="prototyping">
+
+            <h2>Prototyping</h2>
+
+            <p>I created the high-fidelity prototype on Figma due to the newly introduced Dev Mode, which would quicken up our workflow.</p>
+            <p>The focus of this design was <b>familiarity</b>. I wanted to design a familiar, user-friendly, and intuitive interface for the doctors so that they efficiently answer patient queries with minimal interaction cost.</p>
+        
+            <h3>Style Guide</h3>
+            <p>According to color theory, blue symbolizes calm, security, and order. Furthermore, research shows that blue and white is the most popular color scheme in healthcare design, aligning with my goal for a familiar look.</p>
+            <p>I selected the <b>Roboto</b> typeface for its screen readability and balance between content density and reading comfort.</p>
+            <figure>
+                <img src="../assets/superabbu_styleguide.svg" alt="Super Abbu Style Guide" style="border: none;" loading="lazy">
+                <figcaption>Style Guide for Doctors App</figcaption>
+            </figure>
+
+            <h3>High-Fidelity Prototype</h3>
+            <p>We implemented a security code requirement in the application’s registration flow to protect sensitive patient data, providing an added defense against data theft. This would ensure that only doctors from our team could register for the application.</p>
+            <figure>
+                <img src="../assets/superabbu_reg.png" alt="Authentication Flow Screens" style="border: none;" loading="lazy">
+                <figcaption>Authentication Flow Screens</figcaption>
+            </figure>
+            <p>Due to the doctor’s familiarity with the messaging application, we implemented a <b>WhatsApp-like</b> interface for the collaboration and answer mechanisms. Doctors can listen to the patient’s query, collaborate with others, and record their answers from the same interface. </p>
+            <figure>
+                <img src="../assets/superabbu_chat.png" alt="Answer Flow Screens" style="border: none;" loading="lazy">
+                <figcaption>Answer Flow Screens</figcaption>
+            </figure>
+            <p>You can access the high-fidelity prototype for the doctor's application below:</p>
+            <div class="responsive-iframe">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FG3m58pOPmab3NOu7yNWnwj%2FSuperAbbu-Redesign%3Fembed_host%3Dnotion%26kind%3Dproto%26node-id%3D137-5%26page-id%3D102%253A76%26scaling%3Dscale-down%26starting-point-node-id%3D103%253A2%26t%3DhR1HQ3pSw5OLvhEA-1%26type%3Ddesign%26mode%3Ddesign" allowfullscreen></iframe>
+            </div>
+        </section>     
+        <hr>
+        <section class="outcome">
+            <h2>Outcome</h2>
+            <p>We developed an Android version of this application (with a PHP backend), which was launched on March 6, 2023. To date, the doctors have answered <b>100% of valid questions</b> on the platform. I have included a number of relevant statistics below:</p>
+            <figure>
+                <img src="../assets/superabbu_stats.png" alt="Super Abbu Statistics" style="border: none;" loading="lazy">
+                <figcaption>Pertinent Statistics from the Super Abbu program as of October 26, 2023.</figcaption>
+            </figure>
+            <p>For future developments of the Super Abbu doctors app, we’re exploring <b>integrating large language models</b> within the interface. This enhancement aims to elevate the quality of doctor responses and expedite their response times. Pertinent research directions for this update would relate to <b>how we can evaluate and negate automation biases</b> that may arise in the doctor’s responses. </p>
+        </section>
+            <h2>Reflections</h2>
+            <p><b>This project was an amazing experience for me</b> &#10024</p>
+            <p>As someone who worked on the design, development, and deployment of this application, I am immensely proud of the impact that it has created. The UX research for this project <b>taught me how to design for populations with limited tech literacy</b>. I am eager to dive deeper into this domain and harness these insights in future endeavors.</p>
+            <p>My heartfelt appreciation goes out to Professor Mustafa Naseem and the entire team. Their guidance was indispensable, and their expertise significantly enriched the trajectory of our project.</p>
+    </article>
+
+</body>
+</html>
